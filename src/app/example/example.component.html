@@ -1,0 +1,18 @@
+<div class="card" hoverDirective [class.is-favourite]='isFavourite' 
+     style="width: 18rem; display:inline-block; margin: 10px 10px 10px 10px;"
+    (click)="OnClick()">
+    <div class="card-body">
+        <h5 class="card-title">App Name: <span
+                style="color:red; font-weight: bold;">{{inputParameter.name}}</span></h5>
+        <div class="card-text">
+            <div *ngIf="inputParameter.showParameters">
+                <p>Passed Input parameters:</p>
+                <ul>
+                    <li>Country: {{inputParameter.prop1}}</li>
+                    <li>City: {{inputParameter.prop2}}</li>
+                </ul>
+            </div>
+            <p>Clicked: {{timesClicked}} times</p>
+        </div>
+    </div>
+</div>

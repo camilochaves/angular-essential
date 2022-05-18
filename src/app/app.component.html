@@ -1,0 +1,8 @@
+<p>{{ title }} app is running!</p>
+<p>Clicked: {{lastElementClicked}}</p>
+<div *ngIf="items">
+  <app-example *ngFor="let item of items" [inputParameter]="item" [Favourite]="item.isFavourite"
+    (outputParameter)="OnEventActivated($event)">
+  </app-example>
+</div>
+<router-outlet></router-outlet>
