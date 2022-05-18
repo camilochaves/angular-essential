@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Docker
 
 docker pull camilochaves/angular:13.3.5  
-docker run --rm -it --hostname angular --name angular1 --network host camilochaves/angular:13.3.5 bash  
+docker run --rm -it --hostname angular --name angular1 --network host -v $(pwd):/home camilochaves/angular:13.3.5 bash  
 then navigate to /home and type ng serve  
