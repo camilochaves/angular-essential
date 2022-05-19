@@ -10,7 +10,6 @@ import { DataProviderService } from './services/data-provider.service';
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-  service!: Observable<Array<ICardInterface>>;
   title = 'Demonstrando Angular Essential';
   lastElementClicked = "";
   items: Array<ICardInterface> = [];

@@ -1,0 +1,6 @@
+<div *ngIf="items">
+    <app-card *ngFor="let item of items" 
+            [inputParameter]="item" 
+            [Favourite]="item.isFavourite">
+    </app-card>
+</div>

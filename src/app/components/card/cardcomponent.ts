@@ -1,12 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ICardInterface } from '../models/IInputInterface';
+import { ICardInterface } from '../../models/IInputInterface';
 
 @Component({
-  selector: 'app-example',
-  templateUrl: './example.component.html',
-  styleUrls: ['./example.component.scss']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
 })
-export class ExampleComponent implements OnInit {
+export class CardComponent implements OnInit {
 
   @Input() inputParameter!: ICardInterface;
   @Output() outputParameter: EventEmitter<string> = new EventEmitter();
